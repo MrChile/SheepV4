@@ -206,7 +206,6 @@
     <instance objName="obj_bulb" x="160" y="160" name="inst_45CB186D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lighting" x="160" y="256" name="inst_275AB2FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="surface_blood_controller" x="160" y="320" name="inst_DCC88D95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="level12" x="800" y="0" name="inst_32CE6806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="timer_death_count" x="160" y="224" name="inst_28B9AE20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="0" name="inst_CE2BB986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

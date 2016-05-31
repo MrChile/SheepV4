@@ -253,8 +253,6 @@
     <instance objName="obj_player" x="928" y="448" name="inst_4936F6CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="32" name="inst_40282A86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="0" name="inst_7C3624E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="level10" x="800" y="0" name="inst_E08B68DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bulb" x="896" y="32" name="inst_B7A92D8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="timer_death_count" x="64" y="96" name="inst_DBEBDF82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="288" y="0" name="inst_391F4401" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="288" y="32" name="inst_A3F5BC35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -245,7 +245,6 @@
     <instance objName="obj_fire" x="896" y="512" name="inst_F5BD7E00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fire" x="928" y="512" name="inst_24D6A6C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fire" x="960" y="512" name="inst_39AC4E95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="level17" x="800" y="256" name="inst_A6C507D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="timer_death_count" x="32" y="416" name="inst_24E333BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="864" y="224" name="inst_14C02E81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="832" y="224" name="inst_BB661D20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

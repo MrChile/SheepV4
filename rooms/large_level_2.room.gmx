@@ -2936,10 +2936,8 @@
     <instance objName="obj_hook_generator_right" x="1696" y="96" name="inst_4802761C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_delete" x="2176" y="128" name="inst_898BF782" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_step" x="1760" y="256" name="inst_032F4D0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="level19" x="192" y="32" name="inst_0BDD4E4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_saw" x="4032" y="736" name="inst_A52E37D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_saw" x="3072" y="736" name="inst_1B0DC855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bulb" x="256" y="64" name="inst_1B445576" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="timer_death_count" x="32" y="32" name="inst_3E899B2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

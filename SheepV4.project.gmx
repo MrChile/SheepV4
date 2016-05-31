@@ -171,6 +171,7 @@
     <object>objects\timer_death_count</object>
     <object>objects\obj_tute</object>
     <object>objects\obj_hook_tute</object>
+    <object>objects\obj_levelNum</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
@@ -179,6 +180,7 @@
     <room>rooms\saws_intro</room>
     <room>rooms\spike_and_saw_2</room>
     <room>rooms\bounce_intro</room>
+    <room>rooms\spike_and_bounce_easy</room>
     <room>rooms\spike_and_bounce</room>
     <room>rooms\bounce_and_saw</room>
     <room>rooms\crusher_intro</room>
