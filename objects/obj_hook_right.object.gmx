@@ -28,6 +28,7 @@
             <string>///Initialise Variables
 
 moveSpeed = 1;
+moveSpeed2 = 2;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,10 @@ moveSpeed = 1;
           <argument>
             <kind>1</kind>
             <string>//Action
-x += moveSpeed;
+if(obj_player.sprite_index = spr_player_hang &amp;&amp;  obj_player.x &gt; obj_player.xprevious)
+    x += moveSpeed2;
+else
+    x += moveSpeed;
 
 if(x&gt;5000)
     instance_destroy();

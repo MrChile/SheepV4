@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>///Initialise Variables
 
-moveSpeed = .5;
+moveSpeed = 1;
+moveSpeed2 = 2;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,10 @@ moveSpeed = .5;
           <argument>
             <kind>1</kind>
             <string>//Action
-x -= moveSpeed;
+if(obj_player.sprite_index = spr_player_hang &amp;&amp;  obj_player.x &lt; obj_player.xprevious)
+    x -= moveSpeed2;
+else
+    x -= moveSpeed;
 
 if(x&lt;0)
     instance_destroy();

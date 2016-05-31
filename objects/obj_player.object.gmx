@@ -348,7 +348,7 @@ if(place_meeting(x,y,obj_hook_right)){
 }
 
 //Collision with Left Dead Hanging Sheep
-if(place_meeting(x,y,obj_dead_hang_left) &amp;&amp; hanging = false &amp;&amp; vsp!=0){
+if(!place_meeting(x,y,obj_wall) &amp;&amp; place_meeting(x,y,obj_dead_hang_left) &amp;&amp; hanging = false &amp;&amp; vsp!=0){
         
         vsp = 0
       
@@ -375,7 +375,7 @@ if(place_meeting(x,y,obj_dead_hang_left) &amp;&amp; hanging = false &amp;&amp; v
 }
 
 //Collision with Right Dead Hanging Sheep
-if(place_meeting(x,y,obj_dead_hang_right) &amp;&amp; hanging = false &amp;&amp; vsp!=0){
+if(!place_meeting(x,y,obj_wall) &amp;&amp; place_meeting(x,y,obj_dead_hang_right) &amp;&amp; hanging = false &amp;&amp; vsp!=0){
             
         vsp = 0
 
@@ -415,7 +415,7 @@ if(place_meeting(x,y,obj_wall)){
 if (move!=0 &amp;&amp; !place_meeting(x,y,obj_dead_hang_right) &amp;&amp; !place_meeting(x,y,obj_dead_hang_left))
     image_xscale = -move;
     
-    if(hanging=false &amp;&amp; (place_meeting(x,y,obj_dead_hang_right) || place_meeting(x,y,obj_dead_hang_left))){
+    if(hanging=false &amp;&amp; !place_meeting(x,y,obj_wall) &amp;&amp; (place_meeting(x,y,obj_dead_hang_right) || place_meeting(x,y,obj_dead_hang_left))){
         sprite_index = spr_player_hang;
     }else{    
     

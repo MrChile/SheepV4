@@ -171,7 +171,7 @@
     <instance objName="obj_wall" x="768" y="608" name="inst_BCB115D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="800" y="608" name="inst_56D1C49C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_level_exit" x="928" y="512" name="inst_FC07AAD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="160" y="288" name="inst_23F76BAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="320" y="192" name="inst_23F76BAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="surface_blood_controller" x="32" y="160" name="inst_A9AF76EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lighting" x="32" y="192" name="inst_C23E430E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bulb" x="192" y="192" name="inst_3518A89E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

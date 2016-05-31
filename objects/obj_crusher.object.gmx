@@ -93,7 +93,7 @@ down = false;
 if(down = true)
 vspeed = vsp;
 else
-vspeed = -1;
+vspeed = -2;
 </string>
           </argument>
         </arguments>
