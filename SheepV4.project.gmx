@@ -35,14 +35,14 @@
     <sound>sound\snd_baa2</sound>
     <sound>sound\snd_baa3</sound>
     <sound>sound\snd_baa4</sound>
+    <sound>sound\snd_baa5</sound>
     <sounds name="Music">
       <sound>sound\snd_umlaut</sound>
-      <sound>sound\snd_latin</sound>
-      <sound>sound\snd_8bit</sound>
       <sound>sound\snd_myst</sound>
       <sound>sound\snd_fun</sound>
-      <sound>sound\snd_carnival</sound>
       <sound>sound\snd_menu</sound>
+      <sound>sound\snd_iron_horse</sound>
+      <sound>sound\snd_amazing_plan</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

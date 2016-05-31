@@ -29,11 +29,10 @@
 {
     case main_menu: audio_play_sound(snd_menu, 0, true); break;
     case spikes_intro: audio_stop_all(); audio_play_sound(snd_myst,0,true); break;
-    case spike_and_saw_2: audio_stop_all(); audio_play_sound(snd_8bit,0,true); break;
-    case crusher_intro: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
-    case spike_crusher_bounce: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
-    case conveyer_level_2: audio_stop_all(); audio_play_sound(snd_latin,0,true); break;
-    case crusher_and_fire: audio_stop_all(); audio_play_sound(snd_carnival,0,true); break;
+    case bounce_intro: audio_stop_all(); audio_play_sound(snd_iron_horse,0,true); break;
+    case crusher_intro: audio_stop_all(); audio_play_sound(snd_amazing_plan,0,true); break;
+    case Spike_crusher_bounce_2: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
+    case spike_saw_hook_2: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
     case the_end: audio_stop_all(); audio_play_sound(snd_menu, 0, true); break;
 }
 </string>

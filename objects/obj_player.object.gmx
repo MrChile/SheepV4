@@ -40,7 +40,31 @@ bounce = false;
 image_speed = 0.25;
 baa = false;
 baanumber = 0;
+baatime = true;
 jumpspeed = jumpspeed_normal;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>baatime = true;
 </string>
           </argument>
         </arguments>
@@ -190,7 +214,7 @@ if(place_meeting(x,y+1,obj_wall) || place_meeting(x,y+1,obj_dead_platform) || pl
         vsp = -jumpspeed;
         bounce = false;
         baa = true;
-        baanumber = irandom(8);
+        baanumber = choose(1,2);
     }
 }
 if(vsp&lt;20)
@@ -413,19 +437,14 @@ if (move!=0 &amp;&amp; !place_meeting(x,y,obj_dead_hang_right) &amp;&amp; !place
 
 //Baa
 
-if baa == true
+if baa == true &amp;&amp; baanumber = 1 &amp;&amp; baatime = true
     {
-        switch(baanumber)
-            {
-                case 1: audio_play_sound(snd_baa1, 0, false); break;
-                case 2: audio_play_sound(snd_baa2, 0, false); break;
-                case 3: audio_play_sound(snd_baa3, 0, false); break;
-                case 4: audio_play_sound(snd_baa1, 0, false); break;
-            }
+        audio_play_sound(snd_baa5, 0, false)
+        baatime = false;
+        baanumber = 0;
         baa = false;
+        alarm[2] = 60;
     }
-        
-        
         
 </string>
           </argument>
