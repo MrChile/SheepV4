@@ -239,7 +239,7 @@ if(place_meeting(x,y+1,obj_wall) ||  place_meeting(x,y+1,obj_crusher) || place_m
     if(place_meeting(x,y+vsp,obj_dead_platform)){
 }
     else{
-        vsp = key_jump_held * -jumpspeed;
+        vsp = key_jump * -jumpspeed;
 
     }
 }
@@ -288,14 +288,14 @@ if(place_meeting(x,y+vsp,obj_wall) || place_meeting(x,y+vsp,obj_dead_platform) |
 
  
 //Collision with Crusher
-if(!place_meeting(x,y,obj_wall) &amp;&amp; place_meeting(x,y,obj_crusher)){
+if(!place_meeting(x,y,obj_wall) &amp;&amp; place_meeting(x,y,obj_crusher) &amp;&amp; !key_jump){
     vsp = instance_nearest(x,y,obj_crusher).vspeed
 }
 
 y += vsp;
 
-while(place_meeting(x,y-1,obj_crusher) &amp;&amp; !place_meeting(x,y+1,obj_crusher) &amp;&amp; !place_meeting(x,y+1,obj_wall) &amp;&amp; !place_meeting(x,y-1,obj_wall))
-            y+=1;
+//while(place_meeting(x,y-1,obj_crusher) &amp;&amp; !place_meeting(x,y+1,obj_crusher) &amp;&amp; !place_meeting(x,y+1,obj_wall) &amp;&amp; !place_meeting(x,y-1,obj_wall))
+//            y+=1;
 
 if(instance_exists(obj_crusher)){
     if((obj_crusher.vspeed &lt; 0 &amp;&amp; place_meeting(x,y-1,obj_wall) &amp;&amp; place_meeting(x,y+1,instance_nearest(x,y,obj_crusher))) || (place_meeting(x,y-1,obj_crusher) &amp;&amp; place_meeting(x,y+1,obj_crusher)) || (obj_crusher.vspeed &gt; 0 &amp;&amp; place_meeting(x,y+1,obj_wall) &amp;&amp; place_meeting(x,y-1,instance_nearest(x,y,obj_crusher)))){
