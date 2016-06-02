@@ -308,6 +308,19 @@ if(instance_exists(obj_crusher)){
         }
     }
     
+//Crushed by falling sheep
+
+ if(instance_exists(obj_dead_platform)){
+    if((obj_dead_platform.vspeed &lt; 0 &amp;&amp; place_meeting(x,y-1,obj_wall) &amp;&amp; place_meeting(x,y+1,instance_nearest(x,y,obj_dead_platform))) || (place_meeting(x,y-1,obj_dead_platform) &amp;&amp; place_meeting(x,y+1,obj_dead_platform)) || (obj_dead_platform.vspeed &gt; 0 &amp;&amp; place_meeting(x,y+1,obj_wall) &amp;&amp; place_meeting(x,y-1,instance_nearest(x,y,obj_dead_platform)))){
+            repeat(100) instance_create(x,y,obj_blood);
+            audio_play_sound(snd_spikes, 0, false);
+            x = xstart;
+            y = ystart;
+            vsp = 0;
+            global.death_count += 1;
+        }
+    }
+       
 //Collision with belt
 if(place_meeting(x,y+1,obj_belt) &amp;&amp; !place_meeting(x+1,y,obj_wall) &amp;&amp; !place_meeting(x+1,y,obj_dead_platform)){
     x+=2;
