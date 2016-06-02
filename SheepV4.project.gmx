@@ -59,6 +59,7 @@
     <sprite>sprites\spr_dead_hang</sprite>
     <sprite>sprites\spr_player_squashed</sprite>
     <sprite>sprites\spr_platform</sprite>
+    <sprite>sprites\spr_belt</sprite>
     <sprite>sprites\spr_spikes</sprite>
     <sprite>sprites\spr_saw</sprite>
     <sprite>sprites\spr_blood</sprite>
@@ -172,6 +173,7 @@
     <object>objects\obj_tute</object>
     <object>objects\obj_hook_tute</object>
     <object>objects\obj_levelNum</object>
+    <object>objects\obj_belt</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
@@ -194,6 +196,7 @@
     <room>rooms\spike_saw_hook_2</room>
     <room>rooms\crusher_and_fire</room>
     <room>rooms\room23</room>
+    <room>rooms\room21</room>
     <room>rooms\the_end</room>
   </rooms>
   <help>

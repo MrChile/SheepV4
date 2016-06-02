@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Variables
-
-bounce = false;
+grav = 0.5;
+hsp = 0;
+vsp = 0;
 </string>
           </argument>
         </arguments>
@@ -50,26 +51,59 @@ bounce = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Bouncing
+            <string>if(vsp&lt;20)
+    vsp += grav;
 
-
-
-        
-/*
-if instance_exists(obj_player)
-    {
-        
-        if distance_to_point(x, obj_player.y) &gt; 192 &amp;&amp; obj_player.vsp !=0
-            {
-                bounce = true;
-            }
+//Horizontal Collision
+if(place_meeting(x+hsp,y,obj_wall)  || place_meeting(x+hsp,y,obj_dead_platform) || place_meeting(x+hsp,y,obj_crusher) || place_meeting(x+hsp,y,obj_step)|| place_meeting(x+hsp,y,obj_spikes)){
     
-        if place_meeting(x, y-1, obj_player) &amp;&amp; bounce = true
-            {
-                obj_player.vspeed = -15;
-                bounce = false;
-            }
+    yplus = 0;
+    while((place_meeting(x+hsp,y-yplus,obj_wall) || place_meeting(x+hsp,y-yplus,obj_dead_platform) || place_meeting(x+hsp,y-yplus,obj_crusher) || place_meeting(x+hsp,y-yplus,obj_step)) &amp;&amp; yplus &lt;= abs(4*hsp))
+        yplus +=1;
+    if(place_meeting(x+hsp,y-yplus,obj_wall) || place_meeting(x+hsp,y-yplus,obj_dead_platform) || place_meeting(x+hsp,y-yplus,obj_crusher) || place_meeting(x+hsp,y-yplus,obj_step) || place_meeting(x+hsp,y-yplus,obj_spikes)){
+        while(!place_meeting(x+sign(hsp),y,obj_wall)  &amp;&amp; !place_meeting(x+sign(hsp),y,obj_dead_platform) &amp;&amp; !place_meeting(x+sign(hsp),y,obj_crusher) &amp;&amp; !place_meeting(x+sign(hsp),y,obj_step) &amp;&amp; !place_meeting(x+sign(hsp),y,obj_spikes))
+            x+=sign(hsp);
+        hsp = 0;
     }
+    else{
+        y -= yplus;
+    }
+
+}
+x += hsp;
+
+//Vertical Collision
+if(place_meeting(x,y+vsp,obj_wall) || place_meeting(x,y+vsp,obj_dead_platform) || place_meeting(x,y+vsp,obj_crusher) || place_meeting(x,y+vsp,obj_step)){
+    while(!place_meeting(x,y+sign(vsp),obj_wall)  &amp;&amp; !place_meeting(x,y+sign(vsp),obj_dead_platform) &amp;&amp; !place_meeting(x,y+sign(vsp),obj_crusher) &amp;&amp; !place_meeting(x,y+sign(vsp),obj_step)){
+        y+=sign(vsp);
+    }
+    vsp = 0;
+}
+
+
+ 
+//Collision with Crusher
+if(!place_meeting(x,y,obj_wall) &amp;&amp; place_meeting(x,y,obj_crusher)){
+    vsp = instance_nearest(x,y,obj_crusher).vspeed
+}
+
+y += vsp;
+
+//while(place_meeting(x,y-1,obj_crusher) &amp;&amp; !place_meeting(x,y+1,obj_crusher) &amp;&amp; !place_meeting(x,y+1,obj_wall) &amp;&amp; !place_meeting(x,y-1,obj_wall))
+//            y+=1;
+
+if(instance_exists(obj_crusher)){
+    if((obj_crusher.vspeed &lt; 0 &amp;&amp; place_meeting(x,y-1,obj_wall) &amp;&amp; place_meeting(x,y+1,instance_nearest(x,y,obj_crusher))) || (place_meeting(x,y-1,obj_crusher) &amp;&amp; place_meeting(x,y+1,obj_crusher)) || (obj_crusher.vspeed &gt; 0 &amp;&amp; place_meeting(x,y+1,obj_wall) &amp;&amp; place_meeting(x,y-1,instance_nearest(x,y,obj_crusher)))){
+            repeat(100) instance_create(x,y,obj_blood);
+            audio_play_sound(snd_spikes, 0, false);
+            instance_destroy();
+        }
+    }
+    
+//Collision with belt
+if(place_meeting(x,y+1,obj_belt) &amp;&amp; !place_meeting(x+1,y,obj_wall) &amp;&amp; !place_meeting(x+1,y,obj_dead_platform) &amp;&amp; !place_meeting(x+1,y,obj_player)){
+    x+=2;
+}
 </string>
           </argument>
         </arguments>
