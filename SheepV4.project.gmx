@@ -193,9 +193,7 @@
     <room>rooms\spike_saw_hook</room>
     <room>rooms\spike_saw_hook_2</room>
     <room>rooms\crusher_and_fire</room>
-    <room>rooms\large_level_1</room>
-    <room>rooms\large_level_2</room>
-    <room>rooms\large_level_3</room>
+    <room>rooms\room23</room>
     <room>rooms\the_end</room>
   </rooms>
   <help>
