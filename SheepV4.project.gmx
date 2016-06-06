@@ -59,6 +59,7 @@
     <sprite>sprites\spr_player_fall</sprite>
     <sprite>sprites\spr_player_move</sprite>
     <sprite>sprites\spr_player_dead</sprite>
+    <sprite>sprites\new_spr_dead</sprite>
     <sprite>sprites\spr_player_hang</sprite>
     <sprite>sprites\spr_dead_hang</sprite>
     <sprite>sprites\spr_player_squashed</sprite>
@@ -211,6 +212,11 @@
     <room>rooms\rm_18</room>
     <room>rooms\rm_19</room>
     <room>rooms\rm_20</room>
+    <room>rooms\Jack_1</room>
+    <room>rooms\Jack_2</room>
+    <room>rooms\Jack_3</room>
+    <room>rooms\Jack_4</room>
+    <room>rooms\Jack_5</room>
     <room>rooms\the_end</room>
   </rooms>
   <help>

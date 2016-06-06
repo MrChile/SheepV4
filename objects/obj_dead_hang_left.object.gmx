@@ -57,6 +57,12 @@ else
 
 if(x&lt;0)
     instance_destroy();
+    
+if(place_meeting(x+32,y,obj_sheep_dropper)){
+    instance_destroy();
+    instance_create(x-20,y,obj_hook_left);
+    instance_create(x+32,y+16,obj_dead_platform);
+}
 </string>
           </argument>
         </arguments>
