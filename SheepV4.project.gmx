@@ -118,6 +118,7 @@
     <background>background\background2</background>
     <background>background\background3</background>
     <background>background\rm_main</background>
+    <background>background\background5</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
