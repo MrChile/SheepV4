@@ -24,6 +24,8 @@
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
+    <sound>sound\snd_star</sound>
+    <sound>sound\snd_board</sound>
     <sound>sound\snd_saw</sound>
     <sound>sound\snd_spikes</sound>
     <sound>sound\snd_level</sound>
@@ -36,6 +38,7 @@
     <sound>sound\snd_baa3</sound>
     <sound>sound\snd_baa4</sound>
     <sound>sound\snd_baa5</sound>
+    <sound>sound\snd_feeling_good</sound>
     <sounds name="Music">
       <sound>sound\snd_umlaut</sound>
       <sound>sound\snd_myst</sound>
@@ -43,6 +46,7 @@
       <sound>sound\snd_menu</sound>
       <sound>sound\snd_iron_horse</sound>
       <sound>sound\snd_amazing_plan</sound>
+      <sound>sound\snd_broken_fragment</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -103,6 +107,10 @@
     </sprites>
     <sprite>sprites\tute</sprite>
     <sprite>sprites\hookTute</sprite>
+    <sprite>sprites\spr_gold</sprite>
+    <sprite>sprites\spr_silver</sprite>
+    <sprite>sprites\spr_bronze</sprite>
+    <sprite>sprites\spr_board</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -169,35 +177,39 @@
       <object>objects\level19</object>
       <object>objects\level20</object>
     </objects>
-    <object>objects\timer_death_count</object>
     <object>objects\obj_tute</object>
     <object>objects\obj_hook_tute</object>
-    <object>objects\obj_levelNum</object>
     <object>objects\obj_belt</object>
     <object>objects\obj_sheep_dropper</object>
+    <object>objects\obj_medal_death</object>
+    <object>objects\obj_medal_time</object>
+    <object>objects\obj_board</object>
+    <object>objects\obj_level_start_pause</object>
+    <object>objects\obj_levelNum</object>
+    <object>objects\timer_death_count</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
-    <room>rooms\spikes_intro</room>
-    <room>rooms\spikes_level_2</room>
-    <room>rooms\saws_intro</room>
-    <room>rooms\spike_and_saw_2</room>
-    <room>rooms\bounce_intro</room>
-    <room>rooms\spike_and_bounce_easy</room>
-    <room>rooms\spike_and_bounce</room>
-    <room>rooms\bounce_and_saw</room>
-    <room>rooms\crusher_intro</room>
-    <room>rooms\crusher_level_2</room>
-    <room>rooms\crusher_level_3</room>
-    <room>rooms\spike_crusher_bounce</room>
-    <room>rooms\Spike_crusher_bounce_2</room>
-    <room>rooms\conveyer_intro</room>
-    <room>rooms\conveyer_level_2</room>
-    <room>rooms\spike_saw_hook</room>
-    <room>rooms\spike_saw_hook_2</room>
-    <room>rooms\crusher_and_fire</room>
-    <room>rooms\room23</room>
-    <room>rooms\room21</room>
+    <room>rooms\rm_1</room>
+    <room>rooms\rm_2</room>
+    <room>rooms\rm_3</room>
+    <room>rooms\rm_4</room>
+    <room>rooms\rm_5</room>
+    <room>rooms\rm_6</room>
+    <room>rooms\rm_7</room>
+    <room>rooms\rm_8</room>
+    <room>rooms\rm_9</room>
+    <room>rooms\rm_10</room>
+    <room>rooms\rm_11</room>
+    <room>rooms\rm_12</room>
+    <room>rooms\rm_13</room>
+    <room>rooms\rm_14</room>
+    <room>rooms\rm_15</room>
+    <room>rooms\rm_16</room>
+    <room>rooms\rm_17</room>
+    <room>rooms\rm_18</room>
+    <room>rooms\rm_19</room>
+    <room>rooms\rm_20</room>
     <room>rooms\the_end</room>
   </rooms>
   <help>

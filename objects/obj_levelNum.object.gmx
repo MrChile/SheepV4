@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(100,640,"Level: "+string(global.levelCount));
+            <string>draw_set_color(c_white);
+if(room != main_menu &amp;&amp; room != the_end)
+    draw_text(100,640,"Level: "+string(global.levelCount));
 </string>
           </argument>
         </arguments>

@@ -107,7 +107,7 @@ sawID = id;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if sheepHit ==false
+            <string>if (sheepHit == false)
 {
     sheepHit = true;
     alarm[0] = 150;

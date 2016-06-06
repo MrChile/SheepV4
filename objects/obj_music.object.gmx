@@ -27,12 +27,27 @@
             <kind>1</kind>
             <string>switch(room)
 {
-    case main_menu: audio_play_sound(snd_menu, 0, true); break;
-    case spikes_intro: audio_stop_all(); audio_play_sound(snd_myst,0,true); break;
-    case bounce_intro: audio_stop_all(); audio_play_sound(snd_iron_horse,0,true); break;
-    case crusher_intro: audio_stop_all(); audio_play_sound(snd_amazing_plan,0,true); break;
-    case Spike_crusher_bounce_2: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
-    case spike_saw_hook_2: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
+    case main_menu: audio_stop_all(); audio_play_sound(snd_menu, 0, true); break;
+    case rm_1: audio_stop_all(); audio_play_sound(snd_myst,0,true); break;
+    case rm_2: audio_stop_all(); audio_play_sound(snd_myst,0,true); break;
+    case rm_3: audio_stop_all(); audio_play_sound(snd_myst,0,true); break;
+    case rm_4: audio_stop_all(); audio_play_sound(snd_myst,0,true); break;
+    case rm_5: audio_stop_all(); audio_play_sound(snd_iron_horse,0,true); break;
+    case rm_6: audio_stop_all(); audio_play_sound(snd_iron_horse,0,true); break;
+    case rm_7: audio_stop_all(); audio_play_sound(snd_iron_horse,0,true); break;
+    case rm_8: audio_stop_all(); audio_play_sound(snd_iron_horse,0,true); break;
+    case rm_9: audio_stop_all(); audio_play_sound(snd_amazing_plan,0,true); break;
+    case rm_10: audio_stop_all(); audio_play_sound(snd_amazing_plan,0,true); break;
+    case rm_11: audio_stop_all(); audio_play_sound(snd_amazing_plan,0,true); break;
+    case rm_12: audio_stop_all(); audio_play_sound(snd_amazing_plan,0,true); break;
+    case rm_13: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
+    case rm_14: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
+    case rm_15: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
+    case rm_16: audio_stop_all(); audio_play_sound(snd_fun,0,true); break;
+    case rm_17: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
+    case rm_18: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
+    case rm_19: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
+    case rm_20: audio_stop_all(); audio_play_sound(snd_umlaut,0,true); break;
     case the_end: audio_stop_all(); audio_play_sound(snd_menu, 0, true); break;
 }
 </string>

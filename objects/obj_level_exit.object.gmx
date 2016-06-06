@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Image Speed
-
-image_speed = 0.3;
+            <string>image_speed = 0.3;
 levelend = false;
+gold_death = 0;  
+silver_death = 0;
+gold_time = 0;  
+silver_time = 0;
 </string>
           </argument>
         </arguments>
@@ -51,11 +53,48 @@ levelend = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>repeat(250) instance_create(-100,-100,obj_blood);
-    with(surface_blood_controller)
-        instance_destroy();
-if(room_exists(room_next(room)))
-    room_goto_next();
+            <string>instance_create(500,-200,obj_board);
+instance_create(400,-200,obj_medal_death);
+instance_create(600,-200,obj_medal_time);
+switch(room)
+{
+    case rm_1: gold_death = 1; silver_death = 2; gold_time = 3.7; silver_time = 5; break;
+    case rm_2: gold_death = 0; silver_death = 1; gold_time = 2.4; silver_time = 4; break;
+    case rm_3: gold_death = 1; silver_death = 2; gold_time = 2.9; silver_time = 5; break;
+    case rm_4: gold_death = 1; silver_death = 2; gold_time = 7.6; silver_time = 10; break;
+    case rm_5: gold_death = 1; silver_death = 2; gold_time = 2.2; silver_time = 4; break;
+    case rm_6: gold_death = 2; silver_death = 3; gold_time = 6.1; silver_time = 9; break;
+    case rm_7: gold_death = 1; silver_death = 2; gold_time = 3.7; silver_time = 6; break;
+    case rm_8: gold_death = 1; silver_death = 2; gold_time = 3.9; silver_time = 6; break;
+    case rm_9: gold_death = 0; silver_death = 1; gold_time = 2; silver_time = 4; break;
+    case rm_10: gold_death = 0; silver_death = 1; gold_time = 3.8; silver_time = 6; break;
+    case rm_11: gold_death = 0; silver_death = 1; gold_time = 4.5; silver_time = 5; break;
+    case rm_12: gold_death = 1; silver_death = 2; gold_time = 7.6; silver_time = 10; break;
+    case rm_13: gold_death = 1; silver_death = 2; gold_time = 7.3; silver_time = 10; break;
+    case rm_14: gold_death = 1; silver_death = 2; gold_time = 4.9; silver_time = 7; break;
+    case rm_15: gold_death = 2; silver_death = 3; gold_time = 7.9; silver_time = 10; break;
+    case rm_16: gold_death = 2; silver_death = 3; gold_time = 11.3; silver_time = 13; break;
+    case rm_17: gold_death = 3; silver_death = 4; gold_time = 17.1; silver_time = 19; break;
+    case rm_18: gold_death = 1; silver_death = 2; gold_time = 11.5; silver_time = 13; break;
+    case rm_19: gold_death = 2; silver_death = 3; gold_time = 11.3; silver_time = 14; break;
+    case rm_20: gold_death = 1; silver_death = 2; gold_time = 10.9; silver_time = 14; break;
+
+
+}
+
+if(global.death_count &lt;= gold_death)
+    obj_medal_death.sprite_index = spr_gold;
+else if(global.death_count &lt;= silver_death)
+    obj_medal_death.sprite_index = spr_silver;
+else
+    obj_medal_death.sprite_index = spr_bronze;
+    
+if(global.seconds &lt;= gold_time &amp;&amp; global.minutes &lt; 1 &amp;&amp; global.hours &lt; 1)
+    obj_medal_time.sprite_index = spr_gold;
+else if(global.seconds &lt;= silver_time &amp;&amp; global.minutes &lt; 1 &amp;&amp; global.hours &lt; 1)
+    obj_medal_time.sprite_index = spr_silver;
+else
+    obj_medal_time.sprite_index = spr_bronze;
 </string>
           </argument>
         </arguments>
@@ -104,14 +143,14 @@ image_speed = 0;
             <kind>1</kind>
             <string>sprite_index = spr_level_exit_opening;
 
-if(global.count_up){
-    global.count_up = false;
-}else{global.count_up = true;}
+
+global.count_up = false;
+global.stop = true;
+
 
 if(levelend = false){
-    alarm[0] = 10;
-    levelend = true;
-  global.levelCount+=1;  
+    alarm[0] = 20;
+    levelend = true; 
 }
 
 
